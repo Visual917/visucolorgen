@@ -10,6 +10,6 @@ was done under 10 hours.
 
 
 You can edit and modify the code, but you cannot share it as your own. You can keep a fork on GitHub, but you need to ask me first. You can't host it on your own website.
-I don't know if anyone would wonder, but just simply ask me first.
+I don't know if anyone would bother, but just simply ask me first.
 
 My Discord: Visu#0917
