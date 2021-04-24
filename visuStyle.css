@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+body {
+  background: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.topbar {
+  text-align: center;
+  line-height: 80px;
+  z-index: 100;
+  font-family: "Original Surfer", cursive;
+  position: fixed;
+  margin: 0;
+  min-width: 100%;
+  min-height: 80px;
+  max-height: 80px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.topbar a:visited {
+  color: inherit;
+}
+
+.topbar a::before {
+  color: inherit;
+}
+
+.topbar a {
+  color: inherit;
+}
+
+.topbar i,
+.topbar a {
+  font-size: 40px;
+  text-decoration: white;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.go-up {
+  right: 10px;
+  font-size: 50px;
+}
+
+.reload {
+  left: 10px;
+}
+
+.home {
+  left: 60px;
+  cursor: initial;
+}
+
+.topbar h1 {
+  vertical-align: middle;
+  position: relative;
+  margin: 0;
+  font-size: 30px;
+}
+
+.colorcontainer {
+  position: relative;
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  transition: 0.4s ease-in-out;
+}
+
+.colorsquare {
+  display: flex;
+  position: relative;
+  transform-origin: center;
+  width: 33.33%;
+  padding-bottom: 33.33%;
+  flex: 1 1 33%;
+  justify-content: center;
+  align-self: center;
+  margin: 0;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.colorsquare button {
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transform-origin: center;
+  position: absolute;
+  top: 50%;
+  margin: 0%;
+  padding: 0%;
+  width: 50%;
+  height: 8vh;
+  justify-content: center;
+  background-color: rgb(207, 207, 207);
+  opacity: 0%;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  border-radius: 2rem;
+}
+
+.colorsquare:hover button {
+  opacity: 70%;
+}
+
+.colorsquare button:hover {
+  opacity: 90%;
+}
+
+.colorsquare button:active {
+  opacity: 100%;
+  background-color: rgb(243, 243, 243);
+}
+
+.colorsquare h1 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 20%;
+  transition: 0.4s ease-in-out;
+}
+
+.colorsquare h2 {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  margin: 0;
+  padding: 0;
+  transition: 0.4s ease-in-out;
+}
+
+@media (min-width: 1700px) {
+  .colorsquare {
+    width: 20%;
+    padding-bottom: 20%;
+    flex: 1 1 20%;
+  }
+  .topbar h1 {
+    font-size: 50px;
+  }
+  .home {
+    left: 60px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .colorsquare {
+    width: 25%;
+    padding-bottom: 25%;
+    flex: 1 1 25%;
+  }
+  .topbar h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .colorsquare {
+    width: 50%;
+    padding-bottom: 50%;
+    flex: 1 1 50%;
+  }
+  .topbar h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .topbar .reload {
+    font-size: 30px;
+    left: 10px;
+  }
+
+  .topbar .home {
+    font-size: 30px;
+    left: 45px;
+  }
+}
