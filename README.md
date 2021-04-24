@@ -1,5 +1,5 @@
 # Visu's Color Generator
-Just a simple color generator. My first JS project from scratch. Also CSS heavy.
+Just a simple color generator. My first JS project from scratch. JS heavy, and CSS heavy.
 
 You can visit https://visu.studio/color for the demo.
 
